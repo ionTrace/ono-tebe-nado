@@ -19,9 +19,8 @@
 }
 
 .header {
-  position: relative;
   display: grid;
-  grid-template-columns: 45% 33.3% 209px;
+  grid-template-columns: 43% 31% auto;
   padding: 92px 24px 92px 24px;
   background-color: white;
 }
@@ -31,11 +30,10 @@
 }
 
 .header__menu-list {
-  position: relative;
-  left: 28px;
   display: flex;
   gap: 29px;
   align-items: center;
+  padding-left: 28px;
   font-family: Raleway, 'Proxima Nova', 'Gibson', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -45,11 +43,6 @@
 
 .header__menu-link {
   text-underline-offset: 4px;
-}
-
-.header__logo {
-  position: relative;
-  right: 21px;
 }
 
 .header__logo-image {
@@ -67,12 +60,12 @@
 }
 
 .header__address {
-  position: relative;
-  right: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 4px;
+  padding-left: 10px;
+  padding-bottom: 3px;
 }
 
 .cover {
@@ -91,7 +84,7 @@
 
 .cover__title {
   display: flex;
-  gap: 10px;
+  gap: 7px;
   flex-direction: column;
   color: #fff;
   font-family: Raleway, 'Proxima Nova', 'Gibson', sans-serif;
@@ -101,14 +94,11 @@
 }
 
 .aligned-text {
-  position: relative;
   z-index: 1;
-  display: flex;
   letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
-  position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -116,48 +106,51 @@
 }
 
 .aligned-text_right {
-  position: relative;
-  bottom: 8px;
   z-index: 1;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   letter-spacing: 0.3em;
 }
 
 .position-text {
-  position: relative;
-  left: 30px;
+  padding-left: 30px;
 }
 
 .position-text_center {
-  position: relative;
-  right: 30px;
+  padding-left: 30px;
+  letter-spacing: 0.6em;
+}
+
+.position-text_right {
+  letter-spacing: 0.6em;
+}
+
+.position-text_right_no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .cover__description {
-  position: relative;
-  top: 130px;
   display: flex;
   justify-content: space-between;
+  padding-top: 123px;
 }
 
 .cover__description-text {
-  position: relative;
-  left: 28px;
-  top: 2px;
+  z-index: 1;
   display: block;
+  padding-left: 30px;
+  padding-top: 15px;
   color: #fff;
   font-family: Raleway, 'Proxima Nova', 'Gibson', sans-serif;
   font-weight: 400;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 20px;
+  word-spacing: 18px;
 }
 
 .bet__button {
   all: unset;
-  position: relative;
-  bottom: 11px;
+  z-index: 1;
   display: flex;
   padding: 12px 32px 11px 31px;
   color: #fff;
@@ -170,13 +163,11 @@
 }
 
 .lots {
-  position: relative;
-  padding: 179px 24px 200px;
+  padding: 179px 24px 145px;
 }
 
 .lots__heading {
-  position: relative;
-  left: 40px;
+  padding-left: 40px;
   color: #000;
   font-family: Raleway, 'Proxima Nova', 'Gibson', sans-serif;
   font-weight: 700;
@@ -185,11 +176,10 @@
 }
 
 .lots__card-list {
-  position: relative;
-  top: 27px;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  padding-top: 27px;
   list-style: none;
 }
 
@@ -242,15 +232,14 @@
 }
 
 .lots__look-more-link {
-  position: relative;
-  top: 58px;
-  left: 40px;
+  display: inline-block;
+  padding-top: 30px;
+  padding-left: 40px;
   color: #000;
   font-family: Raleway, 'Proxima Nova', 'Gibson', sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-underline-offset: 4px;
-
 }
 
 .about {
@@ -262,16 +251,16 @@
 }
 
 .about__logo {
-  position: relative;
-  top: 5px;
-  left: 23px;
   display: flex;
   justify-content: center;
+  justify-self: center;
   align-items: center;
-  width: 242px;
-  height: 238px;
+  margin-top: 2px;
+  margin-right: 46px;
+  width: 240px;
+  height: 240px;
   background-color: #000;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .about__logo-image {
@@ -282,12 +271,10 @@
 .about__column {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 24px;
 }
 
 .about__title {
-  position: relative;
-  left: 2px;
   align-content: center;
   padding: 105px 0 75px;
   color: #000;
@@ -298,8 +285,7 @@
 }
 
 .about__text {
-  position: relative;
-  left: 2px;
+  padding-left: 2px;
   color: #000;
   font-family: Raleway, 'Proxima Nova', 'Gibson', sans-serif;
   font-weight: 400;
@@ -314,21 +300,19 @@
   padding: 180px 50px 88px;
 }
 
-.footer__address-list {
-  position: relative;
-  left: 1px;
+.footer__address {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  padding-left: 1px;
 }
 
 .footer__menu-list {
-  position: relative;
-  left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1px;
+  padding-left: 33px;
   font-family: Raleway, 'Proxima Nova', 'Gibson', sans-serif;
   font-weight: 400;
   font-size: 18px;
